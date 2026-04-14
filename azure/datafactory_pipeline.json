@@ -1,0 +1,17 @@
+{
+  "name": "DataFactoryPipeline",
+  "properties": {
+    "activities": [
+      {
+        "name": "CopyFromBlobToSQL",
+        "type": "Copy",
+        "inputs": [
+          { "referenceName": "BlobDataset", "type": "DatasetReference" }
+        ],
+        "outputs": [
+          { "referenceName": "SQLDataset", "type": "DatasetReference" }
+        ]
+      }
+    ]
+  }
+}
