@@ -1,0 +1,7 @@
+boto3==1.34.0        # AWS SDK
+sagemaker==2.200.0   # SageMaker Python SDK
+pyarrow==15.0.0      # Glue/Redshift integration
+azureml-core==1.55.0 # Azure ML SDK
+azure-mgmt-datafactory==3.0.0 # Azure Data Factory
+pandas==2.2.1
+numpy==1.26.4
