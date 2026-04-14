@@ -61,3 +61,55 @@ python azure/azureml_pipeline.py
 2026-04-14 12:20:10 Running training script: train.py
 2026-04-14 12:25:30 Training completed with accuracy: 0.92
 2026-04-14 12:25:35 Experiment run finished successfully
+## 🏗️ Architecture Diagram
+
+This project demonstrates end‑to‑end ML workflows across AWS and Azure:
+
+                 ┌───────────────────────┐
+                 │       AWS Cloud       │
+                 │                       │
+                 │  ┌───────────────┐    │
+                 │  │ SageMaker     │───►│ Model Training
+                 │  └───────────────┘    │
+                 │  ┌───────────────┐    │
+                 │  │ Glue ETL      │───►│ Data Preprocessing
+                 │  └───────────────┘    │
+                 │  ┌───────────────┐    │
+                 │  │ Redshift      │───►│ Analytics / SQL
+                 │  └───────────────┘    │
+                 └───────────────────────┘
+
+                 ┌───────────────────────┐
+                 │      Azure Cloud      │
+                 │                       │
+                 │  ┌───────────────┐    │
+                 │  │ Azure ML      │───►│ Model Training
+                 │  └───────────────┘    │
+                 │  ┌───────────────┐    │
+                 │  │ Data Factory  │───►│ Orchestration
+                 │  └───────────────┘    │
+                 └───────────────────────┘
+
+Both clouds handle:
+- **[Data ingestion](ca://s?q=Explain_data_ingestion_in_cloud_ml_projects)** from storage (S3 / Blob)
+- **[ETL preprocessing](ca://s?q=Explain_ETL_preprocessing_in_cloud_ml_projects)** for clean datasets
+- **[Model training](ca://s?q=Explain_model_training_in_cloud_ml_projects)** pipelines
+- **[Analytics & orchestration](ca://s?q=Explain_analytics_and_orchestration_in_cloud_ml_projects)** for deployment and monitoring
+## 🔮 Future Work
+
+Planned enhancements to extend this project:
+
+- **[CI/CD integration](ca://s?q=Add_CI_CD_integration_in_cloud_ml_projects)**  
+  Automate deployments with GitHub Actions, AWS CodePipeline, and Azure DevOps.
+
+- **[Monitoring & logging](ca://s?q=Add_monitoring_and_logging_in_cloud_ml_projects)**  
+  Add MLflow, CloudWatch, and Azure Monitor dashboards for model performance tracking.
+
+- **[Cross‑cloud orchestration](ca://s?q=Add_cross_cloud_orchestration_in_cloud_ml_projects)**  
+  Demonstrate hybrid workflows where AWS preprocessing feeds into Azure ML training.
+
+- **[Synthetic datasets](ca://s?q=Add_synthetic_datasets_in_cloud_ml_projects)**  
+  Provide demo‑ready datasets for reproducible experiments without sensitive data.
+
+- **[Deployment endpoints](ca://s?q=Add_deployment_endpoints_in_cloud_ml_projects)**  
+  Showcase FastAPI + Docker serving on AWS SageMaker and Azure Container Instances.
