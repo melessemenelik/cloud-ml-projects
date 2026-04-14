@@ -31,4 +31,3 @@ cd cloud-ml-projects
 pip install -r requirements.txt
 python aws/sagemaker_training.py
 python azure/azureml_pipeline.py
-pip install -r requirements.txt
