@@ -22,17 +22,18 @@ Includes **SageMaker training jobs**, **Glue ETL workflows**, **Redshift integra
 
 ## 📂 Repository Structure
 cloud-ml-projects/
-│── aws/
+├── aws/
 │   ├── sagemaker_training.py
 │   ├── glue_etl_job.py
 │   ├── redshift_integration.sql
-│── azure/
+├── azure/
 │   ├── azureml_pipeline.py
 │   ├── datafactory_pipeline.json
-│── requirements.txt
-│── README.md
-│── LICENSE
-│── .gitignore
+│   ├── train.py   <-- place here
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
 
 ## 🚀 Quickstart
 Clone the repo and install dependencies:
