@@ -96,6 +96,18 @@ Both clouds handle:
 - **[ETL preprocessing](ca://s?q=Explain_ETL_preprocessing_in_cloud_ml_projects)** for clean datasets
 - **[Model training](ca://s?q=Explain_model_training_in_cloud_ml_projects)** pipelines
 - **[Analytics & orchestration](ca://s?q=Explain_analytics_and_orchestration_in_cloud_ml_projects)** for deployment and monitoring
+
+## 🔄 Cloud ML Workflow  
+
+```mermaid
+flowchart LR
+    A[Data Ingestion (S3 / Blob)] --> B[ETL Preprocessing (AWS Glue / Azure Data Factory)]
+    B --> C[Model Training (AWS SageMaker / Azure ML)]
+    C --> D[Model Artifacts & Registry]
+    D --> E[Analytics (AWS Redshift / SQL)]
+    E --> F[Deployment Endpoints (FastAPI + Docker)]
+    F --> G[Monitoring & Logging (CloudWatch / Azure Monitor)]
+
 ## 🔮 Future Work
 
 Planned enhancements to extend this project:
