@@ -20,6 +20,16 @@ Includes **SageMaker training jobs**, **Glue ETL workflows**, **Redshift integra
 - Azure Data Factory orchestration examples
 - Sample datasets for reproducible demos
 
+
+## 🚀 Quickstart
+Clone the repo and install dependencies:
+```bash
+git clone https://github.com/melessemenelik/cloud-ml-projects.git
+cd cloud-ml-projects
+pip install -r requirements.txt
+python aws/sagemaker_training.py
+python azure/azureml_pipeline.py
+
 ## 📂 Repository Structure
 cloud-ml-projects/
 ├── aws/
@@ -35,14 +45,6 @@ cloud-ml-projects/
 ├── LICENSE
 └── .gitignore
 
-## 🚀 Quickstart
-Clone the repo and install dependencies:
-```bash
-git clone https://github.com/melessemenelik/cloud-ml-projects.git
-cd cloud-ml-projects
-pip install -r requirements.txt
-python aws/sagemaker_training.py
-python azure/azureml_pipeline.py
 ## 📊 Sample Outputs
 
 ### AWS SageMaker Training
