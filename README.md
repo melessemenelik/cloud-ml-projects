@@ -99,17 +99,6 @@ Both clouds handle:
 - **[Model training](ca://s?q=Explain_model_training_in_cloud_ml_projects)** pipelines
 - **[Analytics & orchestration](ca://s?q=Explain_analytics_and_orchestration_in_cloud_ml_projects)** for deployment and monitoring
 
-## 🔄 Cloud ML Workflow  
-
-```mermaid
-flowchart LR
-    A[Data Ingestion (S3 / Blob)] --> B[ETL Preprocessing (AWS Glue / Azure Data Factory)]
-    B --> C[Model Training (AWS SageMaker / Azure ML)]
-    C --> D[Model Artifacts & Registry]
-    D --> E[Analytics (AWS Redshift / SQL)]
-    E --> F[Deployment Endpoints (FastAPI + Docker)]
-    F --> G[Monitoring & Logging (CloudWatch / Azure Monitor)]
-
 ## 🔮 Future Work
 
 Planned enhancements to extend this project:
@@ -128,3 +117,19 @@ Planned enhancements to extend this project:
 
 - **[Deployment endpoints](ca://s?q=Add_deployment_endpoints_in_cloud_ml_projects)**  
   Showcase FastAPI + Docker serving on AWS SageMaker and Azure Container Instances.
+```
+
+## 🔄 Cloud ML Workflow  
+
+```mermaid
+flowchart LR
+    A[Data Ingestion (S3 / Blob)] --> B[ETL Preprocessing (AWS Glue / Azure Data Factory)]
+    B --> C[Model Training (AWS SageMaker / Azure ML)]
+    C --> D[Model Artifacts & Registry]
+    D --> E[Analytics (AWS Redshift / SQL)]
+    E --> F[Deployment Endpoints (FastAPI + Docker)]
+    F --> G[Monitoring & Logging (CloudWatch / Azure Monitor)]
+
+
+
+
