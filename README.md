@@ -123,12 +123,13 @@ Planned enhancements to extend this project:
 
 ```mermaid
 flowchart LR
-    A["Data Ingestion:<br><br>S3 or Blob"] --> B["ETL Preprocessing:<br><br>AWS Glue / Azure Data Factory"]
+    A["Data Ingestion:<br><br>S3 or Blob"] --> B["ETL Preprocessing:<br><br>AWS Glue / Data Factory"]
     B --> C["Model Training:<br><br>AWS SageMaker / Azure ML"]
     C --> D["Model Artifacts & Registry<br><br>(Versioning, Storage)"]
     D --> E["Analytics:<br><br>AWS Redshift / SQL"]
     E --> F["Deployment Endpoints:<br><br>FastAPI + Docker"]
     F --> G["Monitoring & Logging:<br><br>CloudWatch / Azure Monitor"]
+
 
 
 
